@@ -27,7 +27,8 @@ export default Home
 const Main = styled.main`
     text-align:center;
     & .app_title{
-        font-size:28px;
+        font-size:30px;
+        letter-spacing:-1px;
         line-height:1.2;
         font-weight:900;
         color:#fff;
