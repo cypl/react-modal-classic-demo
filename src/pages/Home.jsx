@@ -13,10 +13,13 @@ const Main = styled.main`
         font-weight:900;
         color:#fff;
         margin:0 0 30px 0;
+        & .app_title_wrapper{
+            position:relative;
+        }
     }
     & p{
         margin:0;
-        color:#888;
+        color:#898383;
         & a{
             color:#fff;
             text-decoration:none;
@@ -29,7 +32,13 @@ const Main = styled.main`
             }
         }
     }
-
+`
+const Icon = styled.span`
+    width:30px;
+    display:inline-block;
+    position:absolute;
+    right:-45px;
+    top:-10px;
 `
 const ButtonsWrapper = styled.div`
     display:flex;
@@ -73,7 +82,7 @@ function Home(){
 
     return (
         <Main>
-            <h1 className="app_title">React Modal Classic</h1>
+            <h1 className="app_title"><span className="app_title_wrapper">React Modal Classic <Icon><img src="/favicon.svg"></img></Icon></span></h1>
             <p>You can test the modal component, with 2 different contents:</p>
             <ButtonsWrapper>
                 <Button onClick={() => openModal(<ModalContentFirst/>)} className="leaf">Open first modal</Button>
