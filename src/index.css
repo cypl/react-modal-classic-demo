@@ -13,10 +13,10 @@
 body{
   padding:0;
   margin:0;
-  height:100vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+}
+.content_large{
+  width:calc(100% - 60px);
+  margin:auto;
 }
 figure{
   margin:0;
